@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Dia dos Namorados 💘</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content {
+      background-color: white;
+      color: #000;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px;
+      max-width: 1000px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #e91e63;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    li {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      list-style: none;
+    }
+
+    button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      background-color: #ff6f91;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin: 10px 5px;
+    }
+
+    button:hover {
+      background-color: #ff3e6c;
+    }
+
+    .image-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .image-row img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: red;
+      animation: pulse 1.5s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    #videoContainer {
+      display: none;
+      margin-top: 30px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    #surpriseMessage {
+      display: none;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .popup-message {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #e91e63;
+      font-size: 1.5rem;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    #casalModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #casalModal img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+    }
+
+    #casalModal p {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Feliz Dia dos Namorados! 💘</h1>
+
+    <div class="image-row">
+      <div style="position: relative;">
+        <img src="img1.jpg" alt="Foto 1" onclick="showLoveMessage(this)" />
+        <div class="popup-message">eu te amo meu amor, e vou amar por toda a eternidade 💘</div>
+      </div>
+      <div class="heart" onclick="mostrarFotoCasal()">❤️</div>
+      <div style="position: relative;">
+        <img src="img2.jpg" alt="Foto 2" onclick="showLoveMessage(this)" />
+        <div class="popup-message">eu te amo meu amor, e vou amar por toda a eternidade 💘</div>
+      </div>
+    </div>
+
+    <p>
+      Esse presente tem um significado muito maior do que você pensa, este colar significa o meu amor por você, e para você saber que meu amor por você é infinito... Eu te amo mundos, eu te amo mais que tudo, obrigado por ser essa menina tão especial para mim, sou muito sortudo por te ter comigo, você é perfeita meu amor, tudo o que eu sempre sonhei... o meu inesperado mais esperado, eu sem voce é tipo avião sem asa, futebol sem bola, Santos sem Neymar, corinthians sem roubo, Palmeiras sem pacto 🤫(ops kakakakakak) você concertou algo que nem foi você que quebrou❤️‍🩹, você é minha melhor "confusão" AKAKAKAKAKAKAKAKAKK meu maior desejo é passar o resto da minha vida com você amor ❤️  é seu aniversário mas eu assumo... quem ganhou o melhor presente fui eu💘. 
+    </p>
+
+    <p>Você é o meu presente mais bonito. Que nossa história continue cheia de amor e sonhos realizados. 💑</p>
+
+    <button id="playBtn">Ouvir nossa música 🎶</button>
+    <button id="surpriseBtn">msg surpresa 💌</button>
+
+    <div id="videoContainer">
+      <video controls autoplay>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeos.
+      </video>
+    </div>
+
+    <div id="surpriseMessage">
+      <ul>
+        <li> EU TE AMO </li>
+        <li>em Africano = Ek is lief vir jou </li>
+        <li>em Alemão = Ich lieb Dich</li>
+        <li>em Árabe = Ana b’hibbik</li>
+        <li>em Coreano = Sarang Heyo</li>
+        <li>em Croata = Volim te</li>
+        <li>em Dinamarquês = Jeg Elsker Dig</li>
+        <li>em Holandês = Ik hou van jo</li>
+        <li>em Inglês = I love you</li>
+        <li>em Eslovaco = Lu ‘bim ta</li>
+        <li>em Esloveno = Ljubim te</li>
+        <li>em Espanhol = Te quiero – Te amo</li>
+        <li>em Francês = Je t’aime – Je t’adore</li>
+        <li>em Grego = S’agapo</li>
+        <li>em Hebraico = Ani ohev otah</li>
+        <li>em Irlandês = Taim i’ ngra leat</li>
+        <li>em Italiano = Ti amo</li>
+        <li>em Japonês = Aishiteru</li>
+        <li>em Marroquino = Ana moajaba bik</li>
+        <li>em Polonês = Kocham Ciebie</li>
+        <li>em Português = NEYMAR ❤️❤️❤️❤️</li>
+        <li>em Sueco = Jag alskar dig</li>
+        <li>em Tupi = Oroaûsu</li>
+        <li>em Turco = Seni Seviyorum</li>
+        <li>em Ucraniano = Ya tebe kahayu</li>
+        <li> como dizia Tony Stark EU TE AMO MIL MILHÕES </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal com imagem e frase -->
+  <div id="casalModal">
+    <img src="foto casal.jpeg" alt="Foto do casal" />
+    <p>eu te amo, e sempre vou amar 💘</p>
+  </div>
+
+  <script>
+    const playBtn = document.getElementById('playBtn');
+    const videoContainer = document.getElementById('videoContainer');
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    const surpriseMessage = document.getElementById('surpriseMessage');
+    const casalModal = document.getElementById('casalModal');
+
+    playBtn.addEventListener('click', () => {
+      videoContainer.style.display = 'block';
+      videoContainer.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    surpriseBtn.addEventListener('click', () => {
+      surpriseMessage.style.display = surpriseMessage.style.display === 'block' ? 'none' : 'block';
+      surpriseMessage.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    function showLoveMessage(img) {
+      const popup = img.nextElementSibling;
+      popup.style.display = 'block';
+      setTimeout(() => popup.style.display = 'none', 4000);
+    }
+
+    function mostrarFotoCasal() {
+      casalModal.style.display = 'flex';
+    }
+
+    casalModal.addEventListener('click', () => {
+      casalModal.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
